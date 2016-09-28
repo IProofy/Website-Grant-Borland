@@ -10,6 +10,7 @@
   list-style-type: none;
 	margin: 0;
 	padding: 0;
+	padding-top: 70px;
 	white-space: nowrap;
 
 	position: absolute;
@@ -29,6 +30,7 @@
   display: inline-block;
 	width: 100%;
   padding: 15px;
+	padding-right: 25px;
 	margin: 0;
   text-align: center;
   color: #a8b2b2;
@@ -43,12 +45,12 @@
 
 #logo {
 	border-bottom: 0px;
-	font-size: 20px;
-	padding-right: 120px;
+	font-size: 25px;
+	padding-right: 200px;
 	margin: 0;
 	text-align: center;
 	padding-top: 10px;
-	color: grey;
+	color: rgba(40,40,40,1);
 }
 
 #small-menu {
@@ -87,19 +89,32 @@
 #slot h3 {
 	color: rgba(77,77,77, 1);
 	font-weight:100;
+	font-size: 20px;
+	padding-bottom: 5px;
 }
 
-#slot {
+#slot p {
+	font-size: 14px;
+}
+
+#slots {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	margin-top: 250px;
+
+	margin-top: 400px;
 	left: 50%;
 	margin-right: -50%;
-	transform: translate(-50%, -50%);
+	max-width: 924px;
 	width: 90%;
-	max-width: 700px;
+	transform: translate(-50%, -50%);
+}
+
+#slot {
+	margin-top: 100px;
+	text-align: center;
+	width: 90%;
+	max-width: 924px;
 	border-bottom: 1px solid rgba(77,77,77,0.35);
 }
 
