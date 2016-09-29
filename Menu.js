@@ -8,13 +8,15 @@
 			 if(isOpen)
 			 {
 				 $("#navlist").fadeIn().fadeOut();
-				 $("#player").animate({top:"300px"});
+				 $("#player").delay(300).animate({top:"800px"});
+				 $("#slots").delay(300).animate({top:"400px"});
 				 isOpen = false;
 			 }
 			 else
 			 {
-				 $("#navlist").fadeOut().fadeIn(1000);
-				 $("#player").animate({top:"500px"});
+				 $("#navlist").delay(300).fadeOut().fadeIn(1000);
+				 $("#player").animate({top:"960px"});
+				 $("#slots").animate({top:"600px"});
 				 isOpen = true;
 			 }
 		 });
@@ -23,6 +25,7 @@
         $("#navlist").hide();
        	cssOpen();
      }else{
+			 isOpen= false;
 			 	cssClose();
      }
 
@@ -32,6 +35,7 @@
       if(!isOpen) $("#navlist").hide();
 				cssOpen();
     	}else{
+				isOpen= false;
 				cssClose();
     	}
   	}
@@ -41,7 +45,7 @@
 			$("#small-menu").show();
 			$("#navlist li").css("float","none");
 			$("#navlist").css("width","90%");
-			$("#navlist").css("top","155px");
+			$("#navlist").css("top","125px");
 			$("#navlist a").css("border-bottom","1px solid rgba(77,77,77,0.35)");
 		}
 
@@ -49,11 +53,12 @@
 			$("#logo").show();
 			$("#navlist").show();
 			$("#small-menu").hide();
-			$("#navlist").css("top","25px");
+			$("#navlist").css("top","20px");
 			$("#navlist").css("width","auto");
 			$("#navlist li").css("float","left");
 			$("#navlist a").css("border-bottom","0px");
-			$("#player").css("top","300px");
+			$("#player").css("top","800px");
+			$("#slots").css("top","400px");
 		}
 
 })();
